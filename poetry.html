@@ -7,90 +7,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pML - Poetry</title> 
-    <style> /* Basic styles for the sidebar */ body { font-family: Arial, sans-serif; display: flex; margin: 0; padding: 0; } .sidebar { width: 200px; height: 100vh; background-color: #333; color: white; position: fixed; padding-top: 20px; } .sidebar a { color: white; display: block; padding: 10px; text-decoration: none; font-size: 18px; } .sidebar a:hover { background-color: #575757; } .content { margin-left: 220px; padding: 20px; width: 100%; } </style>
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
 </head>
 <body>
-    <div class="sidebar"> <a href="index.html">Home</a> <a href="about.html">About</a> <a href="codelibrary.html">Code Library</a> <a href="poetry.html">Poetry</a><a href="essay.html">Interactive Essay</a><a href="research.html">Background Research</a><a href="bibliography.html">Bibliography</a> <!-- Add more pages here --> </div>
-    <div class="content">
-        <p><i>falseFriends.cpp</i> is an interactive codework poem written using the ProgramMigrating Language, which seeks to represent my personal experience of living between languages (Italian and English) through code poetry.  Based on the structure of C++, the poem forefronts my experience, while offering multiple routes through the text depending on the reader’s interpretation of English/Italian false friends (words that sound similar across languages but have different meanings).</p>
-        <p>There’s also an interactive version of the poem, which sits at the centre of my <a href="essay.html">interactive essay</a>. The hypertext poem is non-linear and uses both languages in a series of nested ‘if statements’ that circle back to the beginning, offering no closure – all contributing to the notion of queering the algorithm and embracing an idea of multiplicity beyond the binary either/or, in favour of a lived experience of and and and.</p>
-    <pre>
-        <code class="language-cpp">
-        //
-        //  falseFriends.cpp
-        //  
-        //
-        //  Created by Giulia Carla Rossi on 03/05/2022.
-        //
-        
-        #import ProgramMigrating Language library
-        
-        //declaring your variables of identity
-        public bool movimento;
-        public string countryOfArrival;
-        public string paeseDiNascita;
-        public vector <countryOfArrival> people;
-        public vector <countryOfArrival> expectations;
-        public Self newSelf;
-        public int integrazione&&assimilazione;
-        public Lingua languageOfArrival;
-        public FalseFriend pretend[ere];
-        public float English;
-        public float Italiano;
-        
-        
-        private string livedExperience;
-        private Lingua madreLingua;
-        private bool shame;
-        private bool roomForSelf;
-        
-        if (paeseDiNascita != countryOfArrival) && (madreLingua != languageOfArrival) {
-            movimento = true;
-            newSelf.setup();
-            expectations.begin();
+    <div id="navbar">
+		<ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="codelibrary.html">Code Library</a></li>
+            <li><a href="poetry.html">Poetry</a></li>
+            <li><a href="essay.html">Interactive Essay</a></li>
+            <li><a href="research.html">Background Research</a></li>
+            <li><a href="bibliography.html">Bibliography</a></li>
+        </ul>
+    </div>   
+    <div id="content">
+        <div class="inner"> 
+        <p><i>falseFriends.cpp</i> is an interactive codework poem written using the ProgramMigrating Language, which seeks to represent my personal experience of living between languages (Italian and English) through code poetry.  Based on the structure of C++, the poem forefronts my experience, while offering multiple routes through the text depending on the reader’s interpretation of English/Italian false friends (words that sound similar across languages but have d<span class="keyword">if</span>ferent meanings).</p>
+        <p>There’s also an interactive version of the poem, which sits at the centre of my <a href="essay.html">interactive essay</a>. The hypertext poem is non-linear and uses both languages in a series of nested ‘<span class="keyword">if</span> statements’ that circle back to the beginning, offering no closure – all contributing to the notion of queering the algorithm and embracing an idea of multiplicity beyond the binary either/or, in favour of a lived experience of and and and.</p>
+        <pre>
+            <code>
+            <span class="comment">//
+            //  falseFriends.cpp
+            //  
+            //
+            //  Created by Giulia Carla Rossi on 03/05/2022.
+            //</span>
             
-            if (pretend[ere] == "faking") {
-                languageOfArrival.setup(English);
-                if (roomForSelf == true){
+            <span class="import">#import ProgramMigrating Language library</span>
+            
+            <span class="comment">//declaring your variables of identity</span>
+            <span class="keyword">public</span> <span class="datatype">bool</span> <span class="datatype">movimento</span>;
+            <span class="keyword">public</span> <span class="datatype">string</span> <span class="datatype">countryOfArrival</span>;
+            <span class="keyword">public</span> <span class="datatype">string</span> <span class="datatype">paeseDiNascita</span>;
+            <span class="keyword">public</span> <span class="datatype">vector</span> <countryOfArrival> <span class="datatype">people</span>;
+            <span class="keyword">public</span> <span class="datatype">vector</span> <countryOfArrival> <span class="datatype">expectations</span>;
+            <span class="keyword">public</span> <span class="datatype">Self newSelf</span>;
+            <span class="keyword">public</span> <span class="datatype">int</span> <span class="datatype">integrazione</span>&&<span class="datatype">assimilazione</span>;
+            <span class="keyword">public</span> <span class="datatype">Lingua languageOfArrival</span>;
+            <span class="keyword">public</span> <span class="datatype">FalseFriend pretend</span>[ere];
+            <span class="keyword">public</span> <span class="datatype">float</span> <span class="datatype">English</span>;
+            <span class="keyword">public</span> <span class="datatype">float</span> <span class="datatype">Italiano</span>;
+            
+            
+            <span class="keyword">private</span> <span class="datatype">string</span> <span class="datatype">livedExperience</span>;
+            <span class="keyword">private</span> <span class="datatype">Lingua madreLingua</span>;
+            <span class="keyword">private</span> <span class="datatype">bool</span> shame;
+            <span class="keyword">private</span> <span class="datatype">bool</span> roomForSelf;
+            
+            <span class="keyword">if</span> (paeseDiNascita != countryOfArrival) && (madreLingua != languageOfArrival) {
+                <span class="datatype">movimento</span> = <span class="keyword">true</span>;
+                <span class="datatype">newSelf.setup()</span>;
+                <span class="datatype">expectations.begin()</span>;
                 
-                    augmentPortableSociety();
-                    //you can become so much more
-                    //than you ever thought you could
-                    //when you contained only one
-                
-                }else if (roomForSelf == false){
-                
-                    barattaIdioma();
-                    integrazione&&assimilazione++;
-                    //glossolalia è la sesta fase de lutto
-                    //dopo il sacrificio e prima dell'arresa
-                    //alla perdita di un punto di vista familiare in favour of a foreign
-                    //set of imagery nested deep inside your throat
-                    //syntactic bile rising and no silver platter at the end to catch it
-                }
-                
-            }else if (pretend[ere] == "demand"){
-                    languageOfArrival.setup(Italiano);
-                    se (selfTranslate().size() < selfBetrayal().size()){
-                
-                        shame = true;
-                        people.push_back(newSelf);
-                        expectations.update();
-                
-                    }altrimenti{
-                
-                        livedExperience.drawString("you carry your own meaning with you");
-                        semanticTrigger();
-                        //follow the sematic trigger and draw your own conclusions
-                        //there is no giusto or sbagliato
-                        //no single layer of interpretation
-                        transHumance(); //and loop forever
-                        transLate[nt](); //what is smuggled inside a language
+                <span class="keyword">if</span> (pretend[ere] == <span class="string">"faking"</span>) {
+                    <span class="datatype">languageOfArrival</span>.<span class="datatype">setup</span>(English);
+                    <span class="keyword">if</span> (roomForSelf == <span class="keyword">true</span>){
+                    
+                        <span class="datatype">augmentPortableSociety</span>();
+                        <span class="comment">//you can become so much more
+                        //than you ever thought you could
+                        //when you contained only one</span>
+                    
+                    }<span class="keyword">else if</span> (roomForSelf == <span class="keyword">false</span>){
+                    
+                        <span class="datatype">barattaIdioma</span>();
+                        <span class="datatype">integrazione&&assimilazione</span>++;
+                        <span class="comment">//glossolalia è la sesta fase de lutto
+                        //dopo il sacrificio e prima dell'arresa
+                        //alla perdita di un punto di vista familiare in favour of a foreign
+                        //set of imagery nested deep inside your throat
+                        //syntactic bile rising and no silver platter at the end to catch it</span>
                     }
+                    
+                }<span class="keyword">else if</span> (pretend[ere] == <span class="string">"demand"</span>){
+                        <span class="datatype">languageOfArrival</span>.<span class="datatype">setup</span>(Italiano);
+                        se (selfTranslate().size() < selfBetrayal().size()){
+                    
+                            shame = <span class="keyword">true</span>;
+                            people.push_back(newSelf);
+                            expectations.update();
+                    
+                        }<span class="keyword">altrimenti</span>{
+                    
+                            <span class="datatype">livedExperience</span>.<span class="datatype">drawString</span>("you carry your own meaning with you");
+                            <span class="datatype">semanticTrigger</span>();
+                            <span class="comment">//follow the sematic trigger and draw your own conclusions
+                            //there is no giusto or sbagliato
+                            //no single layer of interpretation</span>
+                            <span class="datatype">transHumance</span>(); <span class="comment">//and loop forever</span>
+                            <span class="datatype">transLate</span>[nt](); <span class="comment">//what is smuggled inside a language</span>
+                        }
+                }
             }
-        }
-    </code>  
-    </pre>
+        </code>  
+        </pre>
+        </div>
     </div>
 </body>
 </html>
