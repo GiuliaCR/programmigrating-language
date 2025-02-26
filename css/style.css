@@ -31,6 +31,16 @@ p, table {
     margin-bottom: 1em;
 }
 
+.lib {
+	margin-bottom: 2.5em;
+	margin-top: 2.5em;
+	line-height: 1.6;
+}
+
+spec {
+    font-family: Courier, "Courier New", Monaco, Tahoma;
+}
+
 ol, ul {
     padding-left: 30px;
     margin-bottom: 1em;
@@ -114,7 +124,7 @@ blockquote {
 #content {
 	font-family: "OpenSansLight";
 	padding: 2% 2% 2% 24%;
-	height:auto;
+	line-height: 1.7;
 	min-height:300px;
 	float: left;
 	width: 70%;
@@ -159,7 +169,7 @@ blockquote {
 /* CSS I understand */
 a, a:visited {
     color: #000;
-    text-decoration: none;
+    text-decoration: underline;
     -webkit-transition: all 0.2s linear;
     -moz-transition: all 0.2s linear;
     -ms-transition: all 0.2s linear;
@@ -169,7 +179,7 @@ a, a:visited {
 
 a:hover, a:active {
     color: #6a6a6a;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 h1, h2, h3, h4, h5, h6 {
