@@ -181,6 +181,9 @@ blockquote {
     margin-top: auto;
     z-index:1;
 }
+#footer a {
+	color: #FFFFFF;
+}
 
 /* CSS I understand */
 a, a:visited {
